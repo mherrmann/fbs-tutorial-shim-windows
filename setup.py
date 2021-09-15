@@ -19,14 +19,15 @@ def _get_package_data(pkg_dir, data_subdir):
 
 description = 'Create cross-platform desktop applications with Python and Qt'
 setup(
-    name='fbs_tutorial_shim_windows',
-    version='0.9.9',
+    name='fbs-tutorial-shim-windows',
+    version='1.0.0',
     description=description,
     long_description=
         description + '\n\nSee: https://github.com/mherrmann/fbs-tutorial-shim-windows',
     author='Michael Herrmann',
     author_email='michael+removethisifyouarehuman@herrmann.io',
     url='https://github.com/mherrmann/fbs-tutorial-shim-windows',
+    packages=find_packages(),
     package_data={
         'fbs_tutorial_shim_windows': \
             _get_package_data('fbs_tutorial_shim_windows', 'data')
